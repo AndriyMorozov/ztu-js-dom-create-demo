@@ -1,0 +1,28 @@
+body{
+  margin:0;
+}
+.panel {
+  border:1px solid black;
+  margin:10px;
+  .head {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    .buttons {
+      >div.button {
+        background-color: yellow;
+        width: 20px;
+        height: 20px;
+        color: black;
+      }
+    }
+  }
+  .body {
+    padding: 10px;
+    &.hidden {
+      display: none;
+    }
+  }
+}
